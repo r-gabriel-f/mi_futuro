@@ -1,14 +1,16 @@
 .container-inicio {
-    background-color: red;
-    height: 100vh;
-  }
-  
-  .inicio {
-    background-color: yellow;
-   
-  }
-  .otro {
-    background-color: blue;
-    margin-top: 10px;    
-  }
-  
+  display: flex;
+  background-color: red;
+  height: 100vh;
+}
+
+.detalle-inicio {
+  background-color: yellow;
+  margin-top: 50px;
+}
+
+#img-fondo {
+  /* Cambia el selector para el ID de la imagen */
+  width: 200px;
+  height: 200px;
+}
