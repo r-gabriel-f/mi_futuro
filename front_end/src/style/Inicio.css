@@ -1,0 +1,14 @@
+.container-inicio {
+    background-color: red;
+    height: 100vh;
+  }
+  
+  .inicio {
+    background-color: yellow;
+   
+  }
+  .otro {
+    background-color: blue;
+    margin-top: 10px;    
+  }
+  
