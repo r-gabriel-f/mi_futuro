@@ -1,7 +1,7 @@
+import "./App.css";
+import { Inicio } from "./conponents/Inicio";
 
-import './App.css';
-import { Inicio } from './conponents/Inicio';
-import { Navbar } from './conponents/Navbar';
+import { Navbar } from "./conponents/Navbar";
 
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
       <Navbar></Navbar>
       <Inicio></Inicio>
     </div>
-      
   );
 }
 
