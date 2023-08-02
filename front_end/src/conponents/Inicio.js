@@ -1,8 +1,9 @@
 import React from "react";
 import persona from "../assets/img/persona.png"
+import { Nosotros } from "./Nosotros";
 export const Inicio = () => {
   return (
-    <section className="">
+    <section className="bg-[]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 min-h-screen w-full">
         <div className="flex items-center justify-center flex-col m-10">
           <h1 className="text-4xl font-serif text-justify">
@@ -17,6 +18,7 @@ export const Inicio = () => {
           <img src={persona} alt="persona"></img>
         </div>
       </div>
+      <Nosotros></Nosotros>
     </section>
   );
 };
