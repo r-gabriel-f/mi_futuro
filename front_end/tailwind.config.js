@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         'primary-color': '#ffff',
       },
+      backgroundImage: {
+        'fondo-color': "url(http://www.transparenttextures.com/patterns/brilliant.png)",
+      }
     },
   },
   plugins: [],
