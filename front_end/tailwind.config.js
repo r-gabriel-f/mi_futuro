@@ -9,7 +9,7 @@ module.exports = {
         'primary-color': '#ffff',
       },
       backgroundImage: {
-        'fondo-color': "url(http://www.transparenttextures.com/patterns/brilliant.png)",
+        'fondo-color': "url('https://www.transparenttextures.com/patterns/carbon-fibre-big.png')",
       }
     },
   },
