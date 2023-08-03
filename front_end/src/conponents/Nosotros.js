@@ -4,7 +4,7 @@ export const Nosotros = () => {
   return (
     <section className="bg-[#0F172A] bg-fondo-color flex flex-col ">
       <div className=" space-y-4 mx-10 mt-10">
-        <h1 className="text-5xl text-[#2C928D]">Sobre Nosotros</h1>
+        <h2 className="text-4xl text-[#2C928D]">Sobre Nosotros</h2>
         <p className="text-base text-justify text-[#DAF7F4]">
           FlowSoft es una empresa de desarrollo de software, enfocada en
           agilizar procesos y optimizar operaciones en diversas industrias y
