@@ -19,7 +19,7 @@ export const Servicios = () => {
         procesos internos, estamos aquí para ayudarte.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mt-10">
-        <div className="flex-col items-center justify-center items-center flex ">
+        <div className="flex-col items-center justify-center flex ">
           <img
             src={comercial}
             alt="persona"
@@ -27,7 +27,7 @@ export const Servicios = () => {
           ></img>
           <p className="mt-3">SOFTWARE COMERCIAL</p>
         </div>
-        <div className="flex-col items-center justify-center items-center flex ">
+        <div className="flex-col items-center justify-center flex ">
           <img
             src={facturacion}
             alt="persona"
@@ -36,7 +36,7 @@ export const Servicios = () => {
           <p className="mt-3">SISTEMAS DE FACTURACION</p>
         </div>
 
-        <div className="flex-col items-center justify-center items-center flex ">
+        <div className="flex-col items-center justify-center flex ">
           <img
             src={software}
             alt="persona"
@@ -44,7 +44,7 @@ export const Servicios = () => {
           ></img>
           <p className="mt-3">DESARROLLO DE SOFTWARE</p>
         </div>
-        <div className="flex-col items-center justify-center items-center flex ">
+        <div className="flex-col items-center justify-center flex ">
           <img
             src={web}
             alt="persona"
