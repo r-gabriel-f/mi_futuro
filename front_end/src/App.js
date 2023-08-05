@@ -1,4 +1,5 @@
 import "./App.css";
+import { Baner } from "./conponents/Baner";
 import { Contactos } from "./conponents/Contactos";
 import { Final } from "./conponents/Final";
 import { Inicio } from "./conponents/Inicio";
