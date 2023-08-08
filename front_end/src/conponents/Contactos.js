@@ -42,28 +42,28 @@ export const Contactos = () => {
     <section className="flex flex-col mt-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full my-10">
         <div className="flex flex-col my-auto">
-          <h2 className="text-center text-4xl font-serif text-[#2C928D]">
+          <h2 className="text-center text-4xl font-serif text-black">
             Contactanos
           </h2>
           <div className="mx-auto">
             <div className="flex  mt-10 ">
               <ion-icon
                 name="call-outline"
-                class="w-10 h-10 text-[#2C928D] mr-10"
+                class="w-10 h-10 text-[#0F172A] mr-10"
               ></ion-icon>
               <p>+591 67440842</p>
             </div>
             <div className="flex  mt-10 ">
               <ion-icon
                 name="mail-outline"
-                class="w-10 h-10 text-[#2C928D]  mr-10"
+                class="w-10 h-10 text-[#0F172A]  mr-10"
               ></ion-icon>
               <p>r.gabriel.f@outlook.com</p>
             </div>
             <div className="flex  mt-10 ">
               <ion-icon
                 name="compass-outline"
-                class="w-10 h-10 text-[#2C928D] mr-10"
+                class="w-10 h-10 text-[#0F172A] mr-10"
               ></ion-icon>
               <p>Av. Blanco galindo Km10</p>
             </div>
@@ -71,13 +71,13 @@ export const Contactos = () => {
         </div>
 
         <div className="flex flex-col my-auto">
-          <h2 className="text-center text-4xl font-serif text-[#2C928D]">
+          <h2 className="text-center text-4xl font-serif text-black">
             Formulario
           </h2>
 
           <form onSubmit={handleSubmit} className="mx-10 mt-10">
             <div class="mb-6">
-              <label for="nombre" class="block mb-2 font-medium text-[#2C928D]">
+              <label for="nombre" class="block mb-2 font-medium text-black">
                 Nombres y Apellidos
               </label>
               <input
@@ -90,7 +90,7 @@ export const Contactos = () => {
               ></input>
             </div>
             <div class="mb-6">
-              <label for="email" class="block mb-2 font-medium text-[#2C928D]">
+              <label for="email" class="block mb-2 font-medium text-black">
                 Email
               </label>
               <input
@@ -105,7 +105,7 @@ export const Contactos = () => {
             <div class="mb-6">
               <label
                 for="telefono"
-                class="block mb-2 font-medium text-[#2C928D]"
+                class="block mb-2 font-medium text-black"
               >
                 Telefono
               </label>
@@ -122,7 +122,7 @@ export const Contactos = () => {
               ></input>
             </div>
             <div class="mb-6">
-              <label for="asunto" class="block mb-2 font-medium text-[#2C928D]">
+              <label for="asunto" class="block mb-2 font-medium text-black">
                 Asusto
               </label>
               <input
@@ -137,7 +137,7 @@ export const Contactos = () => {
             <div class="mb-6">
               <label
                 for="mensaje"
-                class="block mb-2 font-medium text-[#2C928D]"
+                class="block mb-2 font-medium text-black"
               >
                 Mensaje
               </label>

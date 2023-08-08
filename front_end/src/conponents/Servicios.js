@@ -3,7 +3,6 @@ import comercial from "../assets/img/comercial.jpg";
 import facturacion from "../assets/img/facturacion.jpg";
 import software from "../assets/img/software.jpg";
 import web from "../assets/img/web.jpg";
-import matenimiento from "../assets/img/matenimiento.jpg";
 import { Baner } from "./Baner";
 
 export const Servicios = () => {

@@ -1,5 +1,11 @@
 import "./App.css";
-import { Baner } from "./conponents/Baner";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+
 import { Contactos } from "./conponents/Contactos";
 import { Final } from "./conponents/Final";
 import { Inicio } from "./conponents/Inicio";
@@ -9,13 +15,17 @@ import { Servicios } from "./conponents/Servicios";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar></Navbar>
-      <Inicio></Inicio>
-      <Servicios></Servicios>
-      <Contactos></Contactos>
-      <Final></Final>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/servicios" element={<Servicios />} />
+        <Route path="/contactos" element={<Contactos />} />
+        <Route path="/*" element={<Navigate to="/" />} />
+      </Routes>
+
+      <Final />
+    </Router>
   );
 }
 
