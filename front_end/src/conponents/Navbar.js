@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
-import vb from "../assets/img/logo.png"
 const navigation = [
   { name: "Inicio", to: "/", current: false },
   { name: "Servicios", to: "/servicios", current: false },

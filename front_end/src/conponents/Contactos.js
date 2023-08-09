@@ -27,7 +27,7 @@ export const Contactos = () => {
         timer: 3000,
       });
 
-      // Reinicia los campos del formulario después de enviar el correo electrónico exitosamente
+     
       setNombre("");
       setFrom("");
       setSubject("");

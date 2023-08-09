@@ -4,12 +4,46 @@ import facturacion from "../assets/img/facturacion.jpg";
 import software from "../assets/img/software.jpg";
 import web from "../assets/img/web.jpg";
 import { Baner } from "./Baner";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
 
 export const Servicios = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   return (
     <section className="flex flex-col mt-16">
-      <div id="whatsapp-float" className="fixed bottom-1 right-4 bg-[#25d366] py-2 px-2 rounded-full cursor-pointer ">
-        <ion-icon name="logo-whatsapp" class="w-10 h-10 text-[#ffff] hover:scale-110"></ion-icon>
+      <div
+        id="whatsapp-float"
+        className="fixed bottom-1 right-4 bg-[#25d366] py-2 px-2 rounded-full cursor-pointer "
+      >
+        <ion-icon
+          name="logo-whatsapp"
+          class="w-10 h-10 text-[#ffff] hover:scale-110"
+        ></ion-icon>
       </div>
       <div className=" space-y-4 mx-10 mt-10">
         <h2 className="text-4xl">Nuestros servicios</h2>
@@ -108,9 +142,66 @@ export const Servicios = () => {
             </p>
           </div>
         </div>
+        <div className="space-y-4 mx-10 mt-10">
+          <h2 className="text-4xl text-[#2C928D]">
+            Las tecnologias que utilizamos son:
+          </h2>
+          <div className="px-4 py-8">
+            <Slider {...settings}>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-react"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-nodejs"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-laravel"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-javascript"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-html5"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-css3"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-docker"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-figma"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+             
+            </Slider>
+          </div>
+        </div>
       </div>
       <Baner></Baner>
-     
     </section>
   );
 };
