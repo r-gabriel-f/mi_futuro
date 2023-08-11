@@ -2,9 +2,13 @@ import React, { useEffect } from "react";
 import persona from "../assets/img/persona.png";
 import nos from "../assets/img/dispositivos.png";
 import { Baner } from "./Baner";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useNavigate } from "react-router-dom";
 export const Inicio = () => {
 
-
+  const navigate = useNavigate(); 
   useEffect(() => {
     const handleScroll = () => {
       const whatsappFloat = document.getElementById('whatsapp-float');
@@ -19,6 +23,37 @@ export const Inicio = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+ 
+
+  const redirectToContactos = () => {
+    navigate("/contactos"); 
+    window.scrollTo(0, 0);
+  };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   return (
     <section className="relative mt-16">
       <div id="whatsapp-float" className="fixed bottom-1 right-4 bg-[#25d366] py-2 px-2 rounded-full cursor-pointer ">
@@ -31,7 +66,7 @@ export const Inicio = () => {
             Potencia tu negocio al siguiente nivel con soluciones innovadoras y a medida.
           </h1>
           <h1 className="text-5xl font-serif text-justify">Realiza tu software con nosotros.</h1>
-          <button class="bg-[#0F172A] text-white font-bold py-2 px-4 rounded-full mt-10">
+          <button class="bg-[#0F172A] text-white font-bold py-2 px-4 rounded-full mt-10" onClick={redirectToContactos}>
             Contactar
           </button>
         </div>
@@ -131,6 +166,64 @@ export const Inicio = () => {
           </div>
         </div>
       </div>
+      <div className="space-y-4 mx-10 mt-10">
+          <h2 className="text-4xl text-[#2C928D]">
+            Las tecnologias que utilizamos son:
+          </h2>
+          <div className="px-4 py-8">
+            <Slider {...settings}>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-react"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-nodejs"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-laravel"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-javascript"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-html5"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-css3"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-docker"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+              <div className="w-32 h-32 flex justify-center items-center">
+                <ion-icon
+                  name="logo-figma"
+                  class="w-32 h-32 text-[#DAF7F4] w-full"
+                ></ion-icon>
+              </div>
+             
+            </Slider>
+          </div>
+        </div>
     </div>
     <Baner></Baner>
    

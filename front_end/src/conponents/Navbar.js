@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+
 const navigation = [
   { name: "Inicio", to: "/", current: false },
   { name: "Servicios", to: "/servicios", current: false },
@@ -14,6 +15,7 @@ function classNames(...classes) {
 
 export const Navbar = () => {
   const [currentNavigation, setCurrentNavigation] = useState(null);
+  window.scrollTo(0, 0);
 
   return (
     <div className="fixed top-0 left-0 w-full bg-[#0F172A] z-10">

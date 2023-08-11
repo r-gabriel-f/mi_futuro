@@ -27,7 +27,6 @@ export const Contactos = () => {
         timer: 3000,
       });
 
-     
       setNombre("");
       setFrom("");
       setSubject("");
@@ -103,10 +102,7 @@ export const Contactos = () => {
               ></input>
             </div>
             <div class="mb-6">
-              <label
-                for="telefono"
-                class="block mb-2 font-medium text-black"
-              >
+              <label for="telefono" class="block mb-2 font-medium text-black">
                 Telefono
               </label>
               <input
@@ -114,9 +110,11 @@ export const Contactos = () => {
                 id="telefono"
                 value={telefono}
                 onChange={(e) => {
-                    const onlyNums = e.target.value.replace(/[^0-9]/g, "").slice(0, 8);
-                    setTelefono(onlyNums);
-                  }}
+                  const onlyNums = e.target.value
+                    .replace(/[^0-9]/g, "")
+                    .slice(0, 8);
+                  setTelefono(onlyNums);
+                }}
                 className="text-sm w-full p-2.5 bg-[#0F172A] rounded-md text-[#DAF7F4]"
                 required
               ></input>
@@ -135,10 +133,7 @@ export const Contactos = () => {
               ></input>
             </div>
             <div class="mb-6">
-              <label
-                for="mensaje"
-                class="block mb-2 font-medium text-black"
-              >
+              <label for="mensaje" class="block mb-2 font-medium text-black">
                 Mensaje
               </label>
               <textarea
@@ -163,14 +158,15 @@ export const Contactos = () => {
         </div>
       </div>
       <div className="w-full h-screen">
+        
         <iframe
-          title="Mapa del sitio"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.4301615593163!2d-66.25621702583851!3d-17.391132164294156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e30bb791626eb3%3A0x7d67a6d449fc6484!2sFlowSoft!5e0!3m2!1ses!2sbo!4v1691766536709!5m2!1ses!2sbo"
           className="gmap_iframe w-full h-screen"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-          src="https://maps.google.com/maps?amp;hl=en&amp;q=TECNOACERO S.R.L.&amp;t=p&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+         
+          
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </section>
