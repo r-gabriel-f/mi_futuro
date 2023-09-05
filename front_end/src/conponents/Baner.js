@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 export const Baner = () => {
   const navigate = useNavigate(); 
-
   const redirectToContactos = () => {
     navigate("/contactos"); 
     window.scrollTo(0, 0);
