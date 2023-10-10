@@ -38,8 +38,7 @@ export const Navbar = () => {
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex flex-shrink-0 items-center">
-
-                    <a className="text-zinc-50 font-serif text-2xl">FlowSoft</a>
+                    <span className="text-zinc-50 font-serif text-2xl">FlowSoft</span>
                   </div>
                   <div className="hidden sm:block ml-auto">
                     <div className="flex space-x-4 ">

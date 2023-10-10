@@ -10,7 +10,7 @@ module.exports = {
       },
       backgroundImage: {
         'fondo-color': "url('https://www.transparenttextures.com/patterns/carbon-fibre-big.png')",
-        'baner':"url('/src/assets/img/uyuni.jpg')"
+        'baner':"url('/src/assets/img/uyuni.webp')"
       }
     },
   },

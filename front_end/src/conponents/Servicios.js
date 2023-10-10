@@ -1,8 +1,8 @@
 import React from "react";
-import comercial from "../assets/img/comercial.jpg";
-import facturacion from "../assets/img/facturacion.jpg";
-import software from "../assets/img/software.jpg";
-import web from "../assets/img/web.jpg";
+import comercial from "../assets/img/comercial.webp";
+import facturacion from "../assets/img/facturacion.webp";
+import software from "../assets/img/software.webp";
+import web from "../assets/img/web.webp";
 import { Baner } from "./Baner";
 
 

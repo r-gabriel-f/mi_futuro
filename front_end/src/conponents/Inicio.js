@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import persona from "../assets/img/persona.png";
-import nos from "../assets/img/dispositivos.png";
+import persona from "../assets/img/persona.webp";
+import nos from "../assets/img/dispositivos.webp";
 import { Baner } from "./Baner";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

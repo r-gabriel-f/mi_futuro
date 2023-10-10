@@ -12,7 +12,7 @@ export const Contactos = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3001/send-email", {
+      await axios.post("http://localhost:3001/send-email", {
         nombre,
         from,
         subject,
@@ -158,15 +158,13 @@ export const Contactos = () => {
         </div>
       </div>
       <div className="w-full h-screen">
-        
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.4301615593163!2d-66.25621702583851!3d-17.391132164294156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e30bb791626eb3%3A0x7d67a6d449fc6484!2sFlowSoft!5e0!3m2!1ses!2sbo!4v1691766536709!5m2!1ses!2sbo"
           className="gmap_iframe w-full h-screen"
-         
-          
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
+          title="Google Maps Embedded View"
         ></iframe>
       </div>
     </section>
