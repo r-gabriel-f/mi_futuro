@@ -5,18 +5,14 @@ import software from "../assets/img/software.webp";
 import web from "../assets/img/web.webp";
 import { Baner } from "./Baner";
 
-
-
-
 export const Servicios = () => {
-  
   return (
     <section className="flex flex-col mt-16">
       <div
         id="whatsapp-float"
         className="fixed bottom-1 right-4 bg-[#25d366] py-2 px-2 rounded-full cursor-pointer "
       >
-       <a href="https://wa.link/nf9ygt" target="_banks">
+        <a href="https://wa.link/nf9ygt" target="_banks">
           <ion-icon
             name="logo-whatsapp"
             class="w-10 h-10 text-[#ffff] hover:scale-110"
@@ -120,7 +116,6 @@ export const Servicios = () => {
             </p>
           </div>
         </div>
-        
       </div>
       <Baner></Baner>
     </section>

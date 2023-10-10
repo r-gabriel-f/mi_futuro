@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const navigation = [
   { name: "Inicio", to: "/", current: false },
@@ -45,22 +45,21 @@ export const Navbar = () => {
                   <div className="hidden sm:block ml-auto">
                     <div className="flex space-x-4 ">
                       {navigation.map((item) => (
-                        <Link
+                        <NavLink
                           key={item.name}
                           to={item.to}
                           className={classNames(
-                            item.to === currentNavigation
-                              ? "bg-gray-700 text-zinc-50"
-                              : "text-zinc-50 hover:bg-gray-700 hover:text-zinc-50",
-                            "rounded-md px-3 py-2 text-sm font-medium"
+                            "text-zinc-50 hover:bg-gray-700 hover:text-zinc-50",
+                            "rounded-md px-3 py-2 text-sm font-medium",
+                            {
+                              "bg-gray-700 text-zinc-50":
+                                item.to === currentNavigation,
+                            }
                           )}
                           onClick={() => setCurrentNavigation(item.to)}
-                          aria-current={
-                            item.to === currentNavigation ? "page" : undefined
-                          }
                         >
                           {item.name}
-                        </Link>
+                        </NavLink>
                       ))}
                     </div>
                   </div>
@@ -71,22 +70,20 @@ export const Navbar = () => {
             <Disclosure.Panel className="sm:hidden">
               <div className="space-y-1 px-2 pb-3 pt-2">
                 {navigation.map((item) => (
-                  <Link
+                  <NavLink
                     key={item.name}
                     to={item.to}
                     className={classNames(
-                      item.to === currentNavigation
-                        ? "bg-gray-700  text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "block rounded-md px-3 py-2 text-base font-medium"
+                      "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      "block rounded-md px-3 py-2 text-base font-medium",
+                      {
+                        "bg-gray-700 text-white": item.to === currentNavigation,
+                      }
                     )}
                     onClick={() => setCurrentNavigation(item.to)}
-                    aria-current={
-                      item.to === currentNavigation ? "page" : undefined
-                    }
                   >
                     {item.name}
-                  </Link>
+                  </NavLink>
                 ))}
               </div>
             </Disclosure.Panel>
