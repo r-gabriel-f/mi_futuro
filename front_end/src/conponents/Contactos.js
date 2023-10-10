@@ -39,6 +39,17 @@ export const Contactos = () => {
 
   return (
     <section className="flex flex-col mt-16">
+      <div
+        id="whatsapp-float"
+        className="fixed bottom-1 right-4 bg-[#25d366] py-2 px-2 rounded-full cursor-pointer "
+      >
+        <a href="https://wa.link/nf9ygt" target="_banks">
+          <ion-icon
+            name="logo-whatsapp"
+            class="w-10 h-10 text-[#ffff] hover:scale-110"
+          ></ion-icon>
+        </a>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full my-10">
         <div className="flex flex-col my-auto">
           <h2 className="text-center text-4xl font-serif text-black">
