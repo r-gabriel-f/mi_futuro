@@ -75,8 +75,11 @@ export const Contactos = () => {
           </h2>
 
           <form onSubmit={handleSubmit} className="mx-10 mt-10">
-            <div class="mb-6">
-              <label for="nombre" class="block mb-2 font-medium text-black">
+            <div className="mb-6">
+              <label
+                htmlFor="nombre"
+                className="block mb-2 font-medium text-black"
+              >
                 Nombres y Apellidos
               </label>
               <input
@@ -88,8 +91,11 @@ export const Contactos = () => {
                 required
               ></input>
             </div>
-            <div class="mb-6">
-              <label for="email" class="block mb-2 font-medium text-black">
+            <div className="mb-6">
+              <label
+                htmlFor="email"
+                className="block mb-2 font-medium text-black"
+              >
                 Email
               </label>
               <input
@@ -101,8 +107,11 @@ export const Contactos = () => {
                 required
               ></input>
             </div>
-            <div class="mb-6">
-              <label for="telefono" class="block mb-2 font-medium text-black">
+            <div className="mb-6">
+              <label
+                htmlFor="telefono"
+                className="block mb-2 font-medium text-black"
+              >
                 Telefono
               </label>
               <input
@@ -119,8 +128,11 @@ export const Contactos = () => {
                 required
               ></input>
             </div>
-            <div class="mb-6">
-              <label for="asunto" class="block mb-2 font-medium text-black">
+            <div className="mb-6">
+              <label
+                htmlFor="asunto"
+                className="block mb-2 font-medium text-black"
+              >
                 Asusto
               </label>
               <input
@@ -132,8 +144,11 @@ export const Contactos = () => {
                 required
               ></input>
             </div>
-            <div class="mb-6">
-              <label for="mensaje" class="block mb-2 font-medium text-black">
+            <div className="mb-6">
+              <label
+                htmlFor="mensaje"
+                className="block mb-2 font-medium text-black"
+              >
                 Mensaje
               </label>
               <textarea
@@ -146,7 +161,7 @@ export const Contactos = () => {
               ></textarea>
             </div>
 
-            <div class="flex justify-center">
+            <div className="flex justify-center">
               <button
                 type="submit"
                 className="text-white bg-[#0F172A] font-medium rounded-lg text-sm px-5 py-2.5"
@@ -161,9 +176,9 @@ export const Contactos = () => {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.4301615593163!2d-66.25621702583851!3d-17.391132164294156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e30bb791626eb3%3A0x7d67a6d449fc6484!2sFlowSoft!5e0!3m2!1ses!2sbo!4v1691766536709!5m2!1ses!2sbo"
           className="gmap_iframe w-full h-screen"
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
           title="Google Maps Embedded View"
         ></iframe>
       </div>

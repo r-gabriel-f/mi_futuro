@@ -66,7 +66,7 @@ export const Inicio = () => {
             Potencia tu negocio al siguiente nivel con soluciones innovadoras y a medida.
           </h1>
           <h1 className="text-5xl font-serif text-justify">Realiza tu software con nosotros.</h1>
-          <button class="bg-[#0F172A] text-white font-bold py-2 px-4 rounded-full mt-10" onClick={redirectToContactos}>
+          <button className="bg-[#0F172A] text-white font-bold py-2 px-4 rounded-full mt-10" onClick={redirectToContactos}>
             Contactar
           </button>
         </div>
@@ -127,7 +127,7 @@ export const Inicio = () => {
               <div className="mr-2 md:mr-10">
                 <ion-icon
                   name="ribbon-outline"
-                  class="w-10 h-10 text-[#2C928D]"
+                  className="w-10 h-10 text-[#2C928D]"
                 ></ion-icon>
               </div>
               <div className="text-justify  md:mr-20">
@@ -147,7 +147,7 @@ export const Inicio = () => {
               <div className="mr-2 md:mr-10">
                 <ion-icon
                   name="medical-outline"
-                  class="w-10 h-10 text-[#2C928D]"
+                  className="w-10 h-10 text-[#2C928D]"
                 ></ion-icon>
               </div>
               <div className="text-justify md:mr-20">
