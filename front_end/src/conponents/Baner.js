@@ -8,7 +8,7 @@ export const Baner = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <section className="h-screen w-full bg-baner bg-cover bg-center bg-fixed">
+    <section className="h-screen bg-baner">
       <div className="flex flex-col justify-center items-center h-full ">
         <div className="bg-[#0F172A] opacity-70 border border-solid border-[#ffff] rounded p-10 text-center">
           <h2 className="text-5xl text-[#DAF7F4]">FlowSoft</h2>
