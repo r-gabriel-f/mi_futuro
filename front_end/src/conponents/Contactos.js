@@ -52,7 +52,38 @@ export const Contactos = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full my-10">
         <div className="flex flex-col my-auto">
-          
+          <h2 className="text-center text-4xl font-serif text-black">
+            Contáctanos
+          </h2>
+          <div className="m-5 text-justify">
+            <p>
+              Por favor, complete el siguiente formulario para establecer
+              contacto con nosotros. Estamos aquí para atender cualquier
+              pregunta que pueda surgir.
+            </p>
+            <p>
+              Además, tiene la opción de comunicarse a través del siguiente
+              número telefónico o correo electrónico:
+            </p>
+          </div>
+          <div class="grid grid-cols-1 mx-5 md:grid-cols-2 md:gap-x-8">
+            <div class="flex mb-4 md:mb-0 justify-center">
+              <ion-icon
+                name="call-outline"
+                class="w-10 h-10 text-[#0F172A] mr-4 md:mr-10"
+              ></ion-icon>
+              <p class="text-sm md:text-base">+591 70422955</p>
+            </div>
+            <div class="flex justify-center">
+              <ion-icon
+                name="mail-outline"
+                class="w-10 h-10 text-[#0F172A] mr-4 md:mr-10"
+              ></ion-icon>
+              <p class="text-sm md:text-base">flowsoft.bo@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col my-auto">
           <form onSubmit={handleSubmit} className="mx-10 mt-10">
             <div className="grid grid-cols-2 gap-4">
               <div className="mb-6">
@@ -60,7 +91,7 @@ export const Contactos = () => {
                   htmlFor="nombre"
                   className="block mb-2 font-medium text-black"
                 >
-                  Nombres y Apellidos
+                  Nombre
                 </label>
                 <input
                   type="nombre"
@@ -154,39 +185,6 @@ export const Contactos = () => {
               </button>
             </div>
           </form>
-        </div>
-        <div className="flex flex-col my-auto">
-          <h2 className="text-center text-4xl font-serif text-black">
-            Contáctanos
-          </h2>
-          <div className="m-5 text-justify">
-            <p>
-              Por favor, complete el siguiente formulario para establecer
-              contacto con nosotros. Estamos aquí para atender cualquier
-              pregunta que pueda surgir.
-            </p>
-            <p>
-              Además, tiene la opción de comunicarse a través del siguiente
-              número telefónico o correo electrónico:
-            </p>
-          </div>
-          <div className="grid grid-cols-2 mx-5">
-            <div className="flex">
-              <ion-icon
-                name="call-outline"
-                class="w-10 h-10 text-[#0F172A] mr-10"
-              ></ion-icon>
-              <p>+591 70422955</p>
-            </div>
-            <div className="flex">
-              <ion-icon
-                name="mail-outline"
-                class="w-10 h-10 text-[#0F172A]  mr-10"
-              ></ion-icon>
-              <p>r.gabriel.f@outlook.com</p>
-            </div>
-            
-          </div>
         </div>
       </div>
       <div className="w-full h-screen">
