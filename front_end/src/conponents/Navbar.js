@@ -19,8 +19,8 @@ export const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 w-full bg-[#0F172A] z-10">
-      <Disclosure as="nav">
-        {({ open }) => (
+      <Disclosure>
+        {({ open, close }) => (
           <>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
               <div className="relative flex h-16 items-center justify-between">
@@ -30,9 +30,17 @@ export const Navbar = () => {
                     <span className="absolute -inset-0.5" />
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                      <XMarkIcon
+                        className="block h-6 w-6"
+                        aria-hidden="true"
+                        onClick={() => close()}
+                      />
                     ) : (
-                      <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                      <Bars3Icon
+                        className="block h-6 w-6"
+                        aria-hidden="true"
+                        onClick={() => close()}
+                      />
                     )}
                   </Disclosure.Button>
                 </div>
@@ -56,7 +64,10 @@ export const Navbar = () => {
                                 item.to === currentNavigation,
                             }
                           )}
-                          onClick={() => setCurrentNavigation(item.to)}
+                          onClick={() => {
+                            setCurrentNavigation(item.to);
+                            close();
+                          }}
                         >
                           {item.name}
                         </NavLink>
@@ -80,7 +91,10 @@ export const Navbar = () => {
                         "bg-gray-700 text-white": item.to === currentNavigation,
                       }
                     )}
-                    onClick={() => setCurrentNavigation(item.to)}
+                    onClick={() => {
+                      setCurrentNavigation(item.to);
+                      close();
+                    }}
                   >
                     {item.name}
                   </NavLink>
