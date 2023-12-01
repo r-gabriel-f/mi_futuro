@@ -12,7 +12,7 @@ export const Servicios = () => {
         id="whatsapp-float"
         className="fixed bottom-1 right-4 bg-[#25d366] py-2 px-2 rounded-full cursor-pointer z-1"
       >
-        <a href="https://wa.link/nf9ygt" target="_banks">
+        <a href="https://wa.link/26678t" target="_banks">
           <ion-icon
             name="logo-whatsapp"
             class="w-10 h-10 text-[#ffff] hover:scale-110"
