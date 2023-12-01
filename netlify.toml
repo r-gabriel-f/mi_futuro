@@ -1,0 +1,3 @@
+[build]
+  command = "npm run build"  # Reemplaza con el comando de construcción de tu frontend
+  functions = "back_end/"     # Reemplaza con la ruta de tu backend serverless
