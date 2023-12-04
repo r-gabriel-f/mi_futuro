@@ -89,7 +89,7 @@ export const Inicio = () => {
           <h2 className="text-4xl text-[#2C928D]">Sobre Nosotros</h2>
           <p className="text-base text-justify text-[#DAF7F4]">
             FlowSoft es una empresa de desarrollo de software, enfocada en
-            agilizar procesos y optimizar operaciones en diversas industrias y
+            agilizar procesos y optimizar operaciones en diversas industrias
             para nuestros clientes. Buscamos ofrecer soluciones tecnológicas
             innovadoras y eficientes que impulsen el crecimiento y la
             competitividad de nuestros clientes. Pero no solo se trata de la
