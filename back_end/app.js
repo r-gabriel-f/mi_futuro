@@ -12,14 +12,14 @@ app.post('/send-email', (req, res) => {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-      user: 'robertgabrielxd2@gmail.com',
-      pass: 'wbixkwjocsblzkzt'
+      user: 'flowsoft.bo@gmail.com',
+      pass: 'bfltwzzbqgujdggt'
     }
   });
 
   const mailOptions = {
-    from: 'robertgabrielxd2@gmail.com',
-    to: 'robertgabrielxd2@gmail.com',
+    from: 'flowsoft.bo@gmail.com',
+    to: 'flowsoft.bo@gmail.com',
     subject: subject,
     telefono: telefono,
     text: `Nombre: ${nombre}\nTelefono: ${telefono}\nEmail: ${from}\nMensaje: ${text}`
