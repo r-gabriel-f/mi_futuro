@@ -6,6 +6,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from "react-router-dom";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 export const Inicio = () => {
   const navigate = useNavigate();
   useEffect(() => {
@@ -81,7 +83,7 @@ export const Inicio = () => {
           </button>
         </div>
         <div className="flex items-center justify-center mt-auto">
-          <img src={persona} alt="persona"></img>
+          <LazyLoadImage src={persona} alt="persona"></LazyLoadImage>
         </div>
       </div>
       <div className="bg-[#0F172A] bg-fondo-color flex flex-col ">
@@ -107,7 +109,7 @@ export const Inicio = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mt-10">
           <div className="flex items-center justify-center">
-            <img src={nos} alt="persona"></img>
+            <LazyLoadImage src={nos} alt="persona"></LazyLoadImage>
           </div>
           <div className="items-center justify-center m-10">
             <h2 className="text-4xl text-[#2C928D]">Por qué elegirnos</h2>

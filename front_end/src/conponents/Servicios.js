@@ -4,6 +4,7 @@ import facturacion from "../assets/img/facturacion.webp";
 import software from "../assets/img/software.webp";
 import web from "../assets/img/web.webp";
 import { Baner } from "./Baner";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const Servicios = () => {
   return (
@@ -32,36 +33,36 @@ export const Servicios = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full my-10">
         <div className="flex-col items-center justify-center flex ">
-          <img
+          <LazyLoadImage
             src={comercial}
             alt="persona"
             className="w-3/4 h-4/5 md:w-2/4 md:h-4/5 hover:scale-110 rounded "
-          ></img>
+          ></LazyLoadImage>
           <p className="mt-3">SOFTWARE COMERCIAL</p>
         </div>
         <div className="flex-col items-center justify-center flex ">
-          <img
+          <LazyLoadImage
             src={facturacion}
             alt="persona"
             className="w-3/4 h-4/5 md:w-2/4 md:h-4/5 hover:scale-110 rounded "
-          ></img>
+          ></LazyLoadImage>
           <p className="mt-3">SISTEMAS DE FACTURACION</p>
         </div>
 
         <div className="flex-col items-center justify-center flex ">
-          <img
+          <LazyLoadImage
             src={software}
             alt="persona"
             className="w-3/4 h-4/5 md:w-2/4 md:h-4/5 hover:scale-110 rounded "
-          ></img>
+          ></LazyLoadImage>
           <p className="mt-3">DESARROLLO DE SOFTWARE</p>
         </div>
         <div className="flex-col items-center justify-center flex ">
-          <img
+          <LazyLoadImage
             src={web}
             alt="persona"
             className="w-3/4 h-4/5 md:w-2/4 md:h-4/5 hover:scale-110 rounded "
-          ></img>
+          ></LazyLoadImage>
           <p className="mt-3">DESARROLLO DE PAGINAS WEB</p>
         </div>
       </div>
