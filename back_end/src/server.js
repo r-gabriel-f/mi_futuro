@@ -27,10 +27,8 @@ app.post('/send-email', (req, res) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.error(error);
       res.status(500).send('Error al enviar el correo electrónico');
     } else {
-      console.log('Correo electrónico enviado:', info.response);
       res.send('Correo electrónico enviado exitosamente');
     }
   });

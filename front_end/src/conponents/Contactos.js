@@ -12,7 +12,7 @@ export const Contactos = () => {
     event.preventDefault();
 
     try {
-      await axios.post("https://mi-futuro-4.onrender.com/send-email", {
+      await axios.post("https://three-c44x.onrender.com/send-email", {
         nombre,
         from,
         subject,
@@ -22,7 +22,7 @@ export const Contactos = () => {
       Swal.fire({
         position: "center",
         icon: "success",
-        title: "¡El correo electrónico se envió correctamente!",
+        title: "El correo ha sido enviado correctamente",
         showConfirmButton: false,
         timer: 3000,
       });
