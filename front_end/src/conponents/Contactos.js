@@ -12,7 +12,7 @@ export const Contactos = () => {
     event.preventDefault();
 
     try {
-      await axios.post("https://flowsoftemail.onrender.comsend-email", {
+      await axios.post("https://flowsoftemail.onrender.com/send-email", {
         nombre,
         from,
         subject,
