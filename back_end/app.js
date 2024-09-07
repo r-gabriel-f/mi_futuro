@@ -13,7 +13,7 @@ app.post('/send-email', (req, res) => {
     port: 587,
     auth: {
       user: 'flowsoft.bo@gmail.com',
-      pass: 'bfltwzzbqgujdggt'
+      pass: 'jzps yyir carp bpfm'
     }
   });
 
