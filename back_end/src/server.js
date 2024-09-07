@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-
+const http = require('http');
 app.use(cors());
 app.use(express.json());
 app.post('/send-email', (req, res) => {
@@ -38,6 +38,7 @@ app.post('/send-email', (req, res) => {
 
 
 const port = process.env.PORT || 3001;
-app.listen(port, () => {
+const server = http.createServer(app);
+server.listen(port, () => {
   console.log(`Servidor backend en ejecución en el puerto ${port}`);
 });
