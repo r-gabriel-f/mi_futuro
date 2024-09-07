@@ -12,7 +12,7 @@ export const Contactos = () => {
     event.preventDefault();
 
     try {
-      await axios.post("http://localhost:3001/send-email", {
+      await axios.post("https://mi-futuro-3.onrender.com/send-email", {
         nombre,
         from,
         subject,
